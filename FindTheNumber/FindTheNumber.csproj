@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>FindTheNumber</AssemblyName>
+        <RootNamespace>FindTheNumber</RootNamespace>
+        <PackageId>FindTheNumber</PackageId>
+        <Authors>Diogo-vf</Authors>
+        <Description>Find the number to complete the game!</Description>
+        <Company />
+        <Product>FindTheNumber</Product>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <NeutralLanguage>en</NeutralLanguage>
+    </PropertyGroup>
+
+</Project>

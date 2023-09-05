@@ -1,0 +1,14 @@
+C:\Users\azlru\Desktop\git\cs\FindTheNumber\bin\Debug\net7.0\FindTheNumber.exe
+C:\Users\azlru\Desktop\git\cs\FindTheNumber\bin\Debug\net7.0\FindTheNumber.deps.json
+C:\Users\azlru\Desktop\git\cs\FindTheNumber\bin\Debug\net7.0\FindTheNumber.runtimeconfig.json
+C:\Users\azlru\Desktop\git\cs\FindTheNumber\bin\Debug\net7.0\FindTheNumber.dll
+C:\Users\azlru\Desktop\git\cs\FindTheNumber\bin\Debug\net7.0\FindTheNumber.pdb
+C:\Users\azlru\Desktop\git\cs\FindTheNumber\obj\Debug\net7.0\FindTheNumber.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\azlru\Desktop\git\cs\FindTheNumber\obj\Debug\net7.0\FindTheNumber.AssemblyInfoInputs.cache
+C:\Users\azlru\Desktop\git\cs\FindTheNumber\obj\Debug\net7.0\FindTheNumber.AssemblyInfo.cs
+C:\Users\azlru\Desktop\git\cs\FindTheNumber\obj\Debug\net7.0\FindTheNumber.csproj.CoreCompileInputs.cache
+C:\Users\azlru\Desktop\git\cs\FindTheNumber\obj\Debug\net7.0\FindTheNumber.dll
+C:\Users\azlru\Desktop\git\cs\FindTheNumber\obj\Debug\net7.0\refint\FindTheNumber.dll
+C:\Users\azlru\Desktop\git\cs\FindTheNumber\obj\Debug\net7.0\FindTheNumber.pdb
+C:\Users\azlru\Desktop\git\cs\FindTheNumber\obj\Debug\net7.0\FindTheNumber.genruntimeconfig.cache
+C:\Users\azlru\Desktop\git\cs\FindTheNumber\obj\Debug\net7.0\ref\FindTheNumber.dll
