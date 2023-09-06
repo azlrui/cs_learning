@@ -23,22 +23,21 @@ namespace FindTheNumber.Utils
             return isNumber;
         }
 
-        public static bool CheckSolution(NumberStatus state, Game game)
+    public static bool CheckSolution(NumberStatus state, Game game)
+    {
+        switch (state)
         {
-            switch (state)
-            {
-                case (NumberStatus.Equal):
-                    Console.WriteLine($"Bravo! Vous avez réussi à trouver le numéro {game.NumberToFind} après {game.UserTries} essais");
-                    return true;
-                    break;
-                case (NumberStatus.Small):
-                    Console.WriteLine($"Votre nombre est trop petit.\nEssayez à nouveau de trouver le numéro entre 0 et 100:");
-                    break;
-                case (NumberStatus.Large):
-                    Console.WriteLine($"Votre nombre est trop grand.\nEssayez à nouveau de trouver le numéro entre 0 et 100:");
-                    break;
-            }
-            return false;
+            case (NumberStatus.Equal):
+                Console.WriteLine($"Bravo! Vous avez réussi à trouver le numéro {game.NumberToFind} après {game.UserTries} essais");
+                return true;
+            case (NumberStatus.Small):
+                Console.WriteLine("Votre nombre est trop petit.\nEssayez à nouveau de trouver le numéro entre 0 et 100:");
+                return false;
+            case (NumberStatus.Large):
+                Console.WriteLine("Votre nombre est trop grand.\nEssayez à nouveau de trouver le numéro entre 0 et 100:");
+                return false;
+            default:
+                return false;
         }
 
         public static bool WannaReplay()
@@ -48,6 +47,7 @@ namespace FindTheNumber.Utils
             do
             {
                 _userKeyInput = Console.ReadKey().Key;
+    }
 
             } while(!ControlUserInput(_userKeyInput));
 
