@@ -1,27 +1,22 @@
 using FindTheNumber.Enums;
 
-namespace FindTheNumber.Utils
+namespace FindTheNumber.Utils;
+public static class Utils
 {
-    public static class Utils
+    public static bool CheckUserInput(string? userInput, Game game)
     {
-        private static ConsoleKey _userKeyInput;
-        public static bool CheckUserInput(string? userInput, Game game)
+        bool isNumber = int.TryParse(userInput, out int nbChosen);
+
+        if (isNumber)
         {
-            bool isNumber;
-
-            isNumber = int.TryParse(userInput, out int nbChosen);
-
-            if (isNumber)
-            {
-                game.FindNumber(nbChosen);
-            }
-            else
-            {
-                Console.Write("Veuillez insérer un numéro s'il vous plaît entre 0 et 100:\t");
-            }
-
-            return isNumber;
+            game.FindNumber(nbChosen);
         }
+        else
+        {
+            Console.Write("Veuillez insérer un numéro s'il vous plaît entre 0 et 100:\t");
+        }
+        return isNumber;
+    }
 
     public static bool CheckSolution(NumberStatus state, Game game)
     {
@@ -39,40 +34,29 @@ namespace FindTheNumber.Utils
             default:
                 return false;
         }
-
-        public static bool WannaReplay()
-        {
-            Console.WriteLine("Est-ce que vous voulez recommencer? Appuyer sur [y] pour 'oui' ou [n] pour 'non'");
+    }
     
-            do
-            {
-                _userKeyInput = Console.ReadKey().Key;
+    public static bool WannaReplay()
+    { 
+        ConsoleKey userKeyInput;
+        Console.WriteLine("Est-ce que vous voulez recommencer? Appuyer sur [y] pour 'oui' ou [n] pour 'non'");
+
+        do
+        {
+            userKeyInput = Console.ReadKey().Key;
+        } while(!ControlUserInput(userKeyInput));
+
+        return userKeyInput == ConsoleKey.Y;
     }
 
-            } while(!ControlUserInput(_userKeyInput));
-
-            if (_userKeyInput == ConsoleKey.Y)
-            {
-                return true;
-            }
-            else if(_userKeyInput == ConsoleKey.N)
-            {
-                return false;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        public static bool ControlUserInput(ConsoleKey userKeyInput)
-        {
-            if (userKeyInput == ConsoleKey.Y || userKeyInput == ConsoleKey.N) return true;
-            Console.WriteLine("Veuillez seulement cliquer sur [y] pour continuer ou [n] pour arrêter");
-            return false;
-        }
+    public static bool ControlUserInput(ConsoleKey userKeyInput)
+    {
+        if (userKeyInput is ConsoleKey.Y or ConsoleKey.N) return true;
+        Console.WriteLine("Veuillez seulement cliquer sur [y] pour continuer ou [n] pour arrêter");
+        return false;
     }
 }
+
 
 
 
