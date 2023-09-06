@@ -1,6 +1,6 @@
 using FindTheNumber.Enums;
 
-namespace FindTheNumber
+namespace FindTheNumber.Utils
 {
     public static class Utils
     {
